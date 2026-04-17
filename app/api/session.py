@@ -8,7 +8,7 @@ router = APIRouter()
 session_service = SessionService()
 
 
-@router.get("/session_summary")
+@router.get("/session_summary", response_model=SessionResult)
 async def session_summary(
     service : SessionService = Depends(lambda: session_service),
     name : str = "Franco COLAPINTO",
