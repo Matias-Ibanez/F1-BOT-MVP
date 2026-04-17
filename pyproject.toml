@@ -1,0 +1,11 @@
+[project]
+name = "f1-bot-mvp"
+version = "0.1.0"
+description = "I did this for learning docker"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi==0.136.0",
+    "uvicorn==0.44.0",
+    "httpx==0.27.0"
+]
